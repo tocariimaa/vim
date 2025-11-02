@@ -74,6 +74,9 @@ syn region   smlEnd matchgroup=smlKeyword start="\<begin\>" matchgroup=smlKeywor
 " if
 syn region   smlNone matchgroup=smlKeyword start="\<if\>" matchgroup=smlKeyword end="\<then\>" contains=ALLBUT,@smlContained,smlThenErr
 
+" while
+syn region   smlNone matchgroup=smlKeyword start="\<while\>" matchgroup=smlKeyword end="\<do\>" contains=ALLBUT,@smlContained
+
 
 "" Modules
 
@@ -121,7 +124,7 @@ syn keyword  smlKeyword  exception fn fun handle
 syn keyword  smlKeyword  in infix infixl infixr
 syn keyword  smlKeyword  match nonfix of orelse
 syn keyword  smlKeyword  raise handle type
-syn keyword  smlKeyword  val where while with withtype
+syn keyword  smlKeyword  val where with withtype
 
 syn keyword  smlType     bool char exn int list option
 syn keyword  smlType     real string unit

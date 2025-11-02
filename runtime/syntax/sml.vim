@@ -141,7 +141,6 @@ syn match    smlCharacter    +#"\\""\|#"."\|#"\\\d\d\d"+
 syn match    smlCharErr      +#"\\\d\d"\|#"\\\d"+
 syn region   smlString       start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=@Spell
 
-syn match    smlFunDef       "=>"
 syn match    smlRefAssign    ":="
 syn match    smlTopStop      ";;"
 syn match    smlOperator     "\^"
@@ -151,6 +150,7 @@ syn match    smlKeyChar      "!"
 syn match    smlKeyChar      ";"
 syn match    smlKeyChar      "\*"
 syn match    smlKeyChar      "="
+syn match    smlFunDef       "=>"
 
 syn match    smlNumber        "\<\~\=\(0w\)\=\d\+\>"
 syn match    smlNumber        "\<\~\=0w\=x\x\+\>"

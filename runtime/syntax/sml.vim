@@ -122,7 +122,7 @@ syn region   smlKeyword start="\<signature\>" matchgroup=smlModule end="\<\w\(\w
 syn match    smlMTDef "=\s*\w\(\w\|'\)*\>"hs=s+1,me=s
 
 syn keyword  smlKeyword  and andalso case
-syn keyword  smlKeyword  datatype else eqtype
+syn keyword  smlKeyword  datatype do else eqtype
 syn keyword  smlKeyword  exception fn fun handle
 syn keyword  smlKeyword  in infix infixl infixr
 syn keyword  smlKeyword  match nonfix of orelse

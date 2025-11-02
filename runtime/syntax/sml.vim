@@ -151,6 +151,7 @@ syn match    smlKeyChar      ";"
 syn match    smlKeyChar      "\*"
 syn match    smlKeyChar      "="
 syn match    smlFunDef       "=>"
+syn match    smlCompose      "\<o\>"
 
 syn match    smlNumber        "\<\~\=\(0w\)\=\d\+\>"
 syn match    smlNumber        "\<\~\=0w\=x\x\+\>"
@@ -199,6 +200,7 @@ hi def link smlModPreRHS    Keyword
 hi def link smlMPRestr2     Keyword
 hi def link smlKeyword      Keyword
 hi def link smlFunDef       Keyword
+hi def link smlCompose      Keyword
 hi def link smlRefAssign    Keyword
 hi def link smlKeyChar      Keyword
 hi def link smlAnyVar       Keyword
